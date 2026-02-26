@@ -1,0 +1,43 @@
+// ========================
+// Footer
+// ========================
+.site-footer {
+  background: $dark;
+  color: $light;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+
+  a {
+    color: $accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.footer-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+
+  .widget {
+    flex: 1 1 200px;
+  }
+}
+
+.site-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}

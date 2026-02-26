@@ -1,0 +1,18 @@
+// 1. Variables & Mixins
+@import 'variables';
+@import 'mixins';
+
+// 2. Reset / base styles
+@import 'reset';
+
+// 3. Layout
+@import 'header';
+@import 'footer';
+
+// // 4. Components
+@import 'single';
+@import 'sidebar';
+@import 'comments';
+
+// 5. Page-specific / template styles
+@import 'templates/template-home';
