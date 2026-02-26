@@ -8,7 +8,7 @@ Template Name: Home Template
 
 <div class="homepage-content">
 
-    <section class="hero">
+    <section data-aos="zoom-in" class="hero">
         <h1>Welcome to ZTheme</h1>
         <p>Practice WordPress theme development.</p>
     </section>

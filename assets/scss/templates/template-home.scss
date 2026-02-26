@@ -97,7 +97,7 @@
           @include transition(background, 0.3s);
 
           &:hover {
-            background: darken($accent, 10%);
+            // background: color.adjust($accent, 10%);
           }
         }
       }

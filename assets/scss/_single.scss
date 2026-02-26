@@ -51,7 +51,7 @@
         border-left: 4px solid $primary;
         padding-left: 1rem;
         font-style: italic;
-        color: darken($primary, 10%);
+        // color: color.adjust($primary, 10%);
         margin: 1.5rem 0;
       }
       a {

@@ -1,6 +1,7 @@
 // 1. Variables & Mixins
 @import 'variables';
 @import 'mixins';
+@import '../../node_modules/aos/dist/aos.css';
 
 // 2. Reset / base styles
 @import 'reset';

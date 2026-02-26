@@ -61,7 +61,7 @@ aside#sidebar {
       transition: background 0.3s;
 
       &:hover {
-        background: darken($primary, 10%);
+        // background: color.adjust($primary, 10%);
       }
     }
   }
