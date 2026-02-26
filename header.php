@@ -6,9 +6,9 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="site-header">
-    <div class="container">
-        <div class="logo">
+<header class="site-header" data-aos="fade-down">
+    <div class="container" >
+        <div class="logo" data-aos="zoom-in-right">
             <?php
             if (has_custom_logo()) {
                 the_custom_logo();
@@ -17,7 +17,7 @@
             <?php } ?>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav" data-aos="zoom-in-left">
             <?php wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'container' => false,

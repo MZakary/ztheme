@@ -8,9 +8,11 @@ Template Name: Home Template
 
 <div class="homepage-content">
 
-    <section data-aos="zoom-in" class="hero">
-        <h1>Welcome to ZTheme</h1>
-        <p>Practice WordPress theme development.</p>
+    <?php $hero_image = get_field('hero_image'); ?>
+    <section data-aos="zoom-in" class="hero" <?php if ($hero_image): ?>
+            style="background-image: url('<?php echo esc_url($hero_image['url']); ?>')" <?php endif; ?>>
+        <h1><?php the_field('hero_title'); ?></h1>
+        <p><?php the_field('hero_description'); ?></p>
     </section>
 
     <section class="latest-posts">
