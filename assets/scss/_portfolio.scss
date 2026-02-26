@@ -1,0 +1,115 @@
+// ========================
+// Portfolio Archive
+// ========================
+.portfolio-archive {
+    padding: 4rem 0;
+    h1 {
+        font-family: $font-heading;
+        color: $dark;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        @media(max-width: $bp-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width: $bp-mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .portfolio-item {
+        border: 1px solid $border;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        h2 {
+            font-family: $font-heading;
+            padding: 1rem 1rem 0;
+            font-size: 1.2rem;
+            a {
+                color: $dark;
+                text-decoration: none;
+                &:hover { color: $primary; }
+            }
+        }
+        p {
+            padding: 0.5rem 1rem;
+            color: $dark;
+            font-size: 0.9rem;
+        }
+        .btn {
+            display: inline-block;
+            margin: 0 1rem 1rem;
+            padding: 0.5rem 1rem;
+            background: $primary;
+            color: $light;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+            &:hover { background: $accent; }
+        }
+    }
+}
+
+// ========================
+// Single Portfolio
+// ========================
+.single-portfolio-wrapper {
+    padding: 4rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+    .portfolio-thumbnail {
+        margin-bottom: 2rem;
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+    h1 {
+        font-family: $font-heading;
+        font-size: 2.5rem;
+        color: $dark;
+        margin-bottom: 1rem;
+    }
+    .project-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        color: $dark;
+    }
+    .project-technologies {
+        color: $dark;
+        margin-bottom: 1rem;
+        strong { color: $primary; }
+    }
+    .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: $primary;
+        color: $light;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background 0.3s;
+        margin-bottom: 2rem;
+        &:hover { background: $accent; }
+    }
+    .project-content {
+        margin-top: 2rem;
+        line-height: 1.8;
+    }
+}

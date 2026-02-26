@@ -115,6 +115,24 @@ function handle_load_more_posts()
 add_action('wp_ajax_load_more_posts', 'handle_load_more_posts');
 add_action('wp_ajax_nopriv_load_more_posts', 'handle_load_more_posts');
 
+function ztheme_register_cpt() {
+    register_post_type('portfolio', array(
+        'labels' => array(
+            'name'          => 'Portfolio',
+            'singular_name' => 'Project',
+            'add_new_item'  => 'Add New Project',
+            'edit_item'     => 'Edit Project',
+        ),
+        'public'        => true,
+        'has_archive'   => true,
+        'supports'      => array('title', 'thumbnail', 'editor'),
+        'menu_icon'     => 'dashicons-portfolio',
+        'rewrite'       => array('slug' => 'portfolio'),
+        'show_in_rest'  => true,
+    ));
+}
+add_action('init', 'ztheme_register_cpt');
+
 
 // Include custom functions
 require get_template_directory() . '/inc/custom-functions.php';
